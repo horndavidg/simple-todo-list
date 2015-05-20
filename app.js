@@ -17,3 +17,21 @@ form.reset();
 
 
 });
+
+var ul = document.querySelector("ul");
+
+ul.addEventListener("click", function(e) {
+
+//console.log("you clicked the list");
+//console.dir(e.srcElement);
+
+if(e.srcElement.className) {
+
+	e.srcElement.className = "";
+}
+else {
+
+	e.srcElement.className = "completed";
+}
+
+	});
